@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win Cripto - Contacto</title>
+    <link rel="icon" href="logo_favicon (1).ico">
+    <link rel="stylesheet" href="contacto.css"> 
+
+
+    <script>
+      function contacto() {
+  let x = document.forms["formulario"]["nombre"].value;
+  let y = document.forms["formulario"]["email"].value;
+  let z = document.forms["formulario"]["mensaje"].value;
+  let c = document.forms["formulario"]["celular"].value;
+
+  if (x == "") {
+    alert("¡No olvides colocar tu nombre!");
+    return false;
+ }
+ if (x == ""|| y=="" ||z=="") {
+    alert("¡No olvides completar todos tus datos!");
+    return false;
+ }
+  else {
+    alert("Gracias por contactarnos, " + x + ". Nos comunicaremos al correo " + y + " o al número " + c);
+    return true;
+     }
+ 
+
+}
+    
+        
+      </script>
+</head>
+<body>
+  <div class="main">
+    <div class = "test">
+    <div class="d1"></div>
+    <div class="d2"></div>
+    <div class="d3"></div>
+    <div class="d4"></div>
+ </div>
+
+    <header>
+        <a href="inicio_1.html">
+        <img src="logo_win.jpeg" alt="LOGO"  class="cabecera">
+    </a>
+        
+    </header>
+
+    <nav>
+        <ul>
+          <li>
+            <a href="inicio_1.html">Inicio</a>
+          </li>
+          <li>
+            <a href="Billeteras.html">Billeteras Virtuales</a>
+          </li>
+
+          <li>
+            <a href="minado_automatic.html" >Minado en Automático</a> 
+          </li>
+          <li>
+            <a href="appMovil.html">Apps para móvil</a>
+          </li>
+          <li>
+            <a href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <form name="formulario"  onsubmit="return contacto()" method="post">
+        <h2>¿Querés saber más?</h2>
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" name="nombre" placeholder="Nombre completo" required>
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" placeholder="ejemplo@email.com" required>
+        <label for="nombre">Celular:</label>
+        <input id="celular" name="celular" placeholder="Ingresalo con el código de área">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Déjanos tus dudas o consultas" required></textarea><br>
+        <button id="enviar" type="button" onclick="contacto()" name="enviar" value="Enviar">Enviar</button>
+ </form>
+
+      <footer>
+        Si quieres saber más, visítanos <br>
+         <span class= "facebook">
+         <a href="https://www.facebook.com/groups/448989142771927" target="blank">
+             <img src="facebook.png" alt="face" style="size: 10%;">
+         
+         </a>
+       </span>
+       <span class= "youtube">
+         <a href="https://www.youtube.com/channel/UCP-38zRiWaEjeDx4FFcJtgg" target="blank">
+             <img src="youtube.png" alt="youtube" style="size: 10%;">
+         </a>
+       </span>
+
+       </footer>
+       </div>
+</body>
+</html>
